@@ -32,3 +32,11 @@ A simple Node.js + SQLite app that allows you to collect user input on one HTML 
    npm start
    ```
 5. Open `http://localhost:3000/index.html` in your browser
+
+## Author
+
+Kinter - [Website](https://kinter.netlify.app/) | [GitHub](https://github.com/KM-Kinter)
+
+---
+
+Made with ❤️ by Kinter 
