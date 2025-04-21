@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latest Entry</title>
+</head>
+<body>
+  <div id="output">Loading...</div>
+
+  <script>
+    // Fetch and display the latest entry from the database
+    async function loadData() {
+      const res = await fetch('/api/latest');
+      const result = await res.json();
+
+      if (result.success) {
+        document.getElementById('output').innerText =
+          `Name: ${result.data.name}\nMessage: ${result.data.message}`;
+      } else {
+        document.getElementById('output').innerText = 'Could not load data.';
+      }
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
